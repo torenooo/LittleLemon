@@ -2,6 +2,8 @@ from django.urls import path,include
 from . import views
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views as authviews
+from .views import MenuItemsView
+
 
 router = DefaultRouter()
 router.register(r'tables', views.BookingViewSet)
